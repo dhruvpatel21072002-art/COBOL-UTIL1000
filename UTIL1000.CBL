@@ -1,10 +1,10 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. UTIL1000.
       *****************************************************************
-      *  Programmer.:
-      *  Date.......:
+      *  Programmer.:DHRUV PATEL
+      *  Date.......:2.11.2026
       *  GitHub URL.:
-      *  Description:
+      *  Description:WORKING ON TH ECODE IN UTIL1000
       *****************************************************************
        DATA DIVISION.
        WORKING-STORAGE SECTION.
@@ -25,6 +25,16 @@
            05  WS-C1-NAME           PIC X(12)   VALUE 'CUST-ALPHA  '.
            05  WS-C1-KWH            PIC 9(5)    VALUE 350.
            05  WS-C1-FEE            PIC 9(3)V99 VALUE 14.95.
+       
+       01  WS-CUST2.
+           05  WS-C2-NAME           PIC X(12)   VALUE 'CUST-BRAVO  '.
+           05  WS-C2-KWH            PIC 9(5)    VALUE 925.
+           05  WS-C2-FEE            PIC 9(3)V99 VALUE 14.95.
+
+       01  WS-CUST3.
+           05  WS-C3-NAME           PIC X(12)   VALUE 'CUST-CHARLIE'.
+           05  WS-C3-KWH            PIC 9(5)    VALUE 1350.
+           05  WS-C3-FEE            PIC 9(3)V99 VALUE 14.95.
 
       *****************************************************************
       * CURRENT "INPUT" FIELDS (LOADED PER CUSTOMER)
@@ -176,3 +186,4 @@
            DISPLAY '--------------------------------'.
            DISPLAY 'TOTAL BILL     : ' WS-MONEY-ED2.
            DISPLAY '--------------------------------'.
+
