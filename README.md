@@ -54,7 +54,7 @@ Each customer is processed sequentially using structured PERFORM logic.
 
 ## 🖥️ Sample Program Output
 
-![Program Output](assets/UTIL2000_Output.png)
+![Program Output](src/assets/UTIL2000_Output.png)
 
 ---
 
