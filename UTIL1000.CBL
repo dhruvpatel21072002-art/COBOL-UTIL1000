@@ -78,8 +78,14 @@
            DISPLAY '********************************'.
            DISPLAY ' '.
 
-           PERFORM 500-LOAD-CUST.
-           PERFORM 600-RUN-BILL.
+           PERFORM 500-LOAD-CUST1
+           PERFORM 600-RUN-BILL
+
+           PERFORM 500-LOAD-CUST2
+           PERFORM 600-RUN-BILL
+
+           PERFORM 500-LOAD-CUST3
+           PERFORM 600-RUN-BILL
 
            STOP RUN.
 
@@ -186,4 +192,5 @@
            DISPLAY '--------------------------------'.
            DISPLAY 'TOTAL BILL     : ' WS-MONEY-ED2.
            DISPLAY '--------------------------------'.
+
 
