@@ -92,10 +92,21 @@
       *****************************************************************
       * MOVE name/kwh/fee from CUST into current fields.
       *****************************************************************
-       500-LOAD-CUST.
+       500-LOAD-CUST1.
            MOVE WS-C1-NAME TO WS-CUST-NAME.
            MOVE WS-C1-KWH  TO WS-KWH-USED.
            MOVE WS-C1-FEE  TO WS-SERVICE-FEE.
+
+	500-LOAD-CUST2.
+           MOVE WS-C2-NAME TO WS-CUST-NAME.
+           MOVE WS-C2-KWH  TO WS-KWH-USED.
+           MOVE WS-C2-FEE  TO WS-SERVICE-FEE.
+
+       500-LOAD-CUST3.
+           MOVE WS-C3-NAME TO WS-CUST-NAME.
+           MOVE WS-C3-KWH  TO WS-KWH-USED.
+           MOVE WS-C3-FEE  TO WS-SERVICE-FEE.
+
 
       *****************************************************************
       * BILL ROUTINE
@@ -192,5 +203,6 @@
            DISPLAY '--------------------------------'.
            DISPLAY 'TOTAL BILL     : ' WS-MONEY-ED2.
            DISPLAY '--------------------------------'.
+
 
 
